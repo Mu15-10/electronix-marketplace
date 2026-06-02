@@ -1,0 +1,45 @@
+services:
+  - type: web
+    name: electronix-backend
+    env: node
+    region: ohio
+    plan: free
+    buildCommand: cd backend && npm install && npm run build
+    startCommand: cd backend && npm run start:prod
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: electronix-db
+          property: connectionString
+      - key: REDIS_URL
+        fromService:
+          name: electronix-redis
+          type: redis
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      - key: CORS_ORIGIN
+        value: https://electronix-marketplace.vercel.app
+      - key: ELASTICSEARCH_URL
+        value: https://electronix-api.onrender.com/elastic
+      - key: AWS_REGION
+        value: us-east-1
+      - key: AWS_ACCESS_KEY_ID
+        sync: false
+      - key: AWS_SECRET_ACCESS_KEY
+        sync: false
+
+  - type: redis
+    name: electronix-redis
+    plan: free
+    maxmemoryPolicy: allkeys-lru
+
+databases:
+  - name: electronix-db
+    plan: free
+    databaseType: postgres
+    ipAllowList: []
