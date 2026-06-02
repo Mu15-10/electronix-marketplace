@@ -75,7 +75,7 @@ export default function AuctionsPage() {
         const hours = Math.floor((diff % 86400000) / 3600000);
         const minutes = Math.floor((diff % 3600000) / 60000);
         const secs = Math.floor((diff % 60000) / 1000);
-        updated[a.id] = days > 0 ? `${d}d ${h}h ${m}m ${s}s` : `${h}h ${m}m ${s}s`;
+        updated[a.id] = days > 0 ? `${days}d ${hours}h ${minutes}m ${secs}s` : `${hours}h ${minutes}m ${secs}s`;
       });
       setTimeRemaining(updated);
     }, 1000);
