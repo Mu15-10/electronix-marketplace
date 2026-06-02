@@ -1,0 +1,25 @@
+(node:23464) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Connected
+STEP users=1 listings=2 reviews=3
+Cleared reviews
+Cleared wishlist
+Cleared listings
+Cleared users
+
+Admin created: admin@electronix.com / Admin123!
+5 sellers created
+5 buyers created
+
+........
+mobile-phones: 800 products
+....
+tablets: 400 products
+.......
+laptops: 700 products
+...
+desktops: 300 products
+...
+smart-watches: 350 products
+....
+gaming-consoles: 350 products

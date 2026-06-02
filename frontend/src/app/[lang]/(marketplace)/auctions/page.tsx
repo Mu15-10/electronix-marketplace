@@ -41,7 +41,7 @@ export default function AuctionsPage() {
     setLoading(true);
     try {
       const params: Record<string, string> = {
-        page: String(page), page_size: '12', sort_by: sortBy,
+        page: String(page), limit: '12', sortBy: sortBy,
       };
       if (filterBrand) params.brand = filterBrand;
       if (filterModel) params.model = filterModel;

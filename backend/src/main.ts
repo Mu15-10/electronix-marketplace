@@ -28,7 +28,7 @@ async function bootstrap() {
 
   app.use(cookieParser());
 
-  const corsOrigin = process.env.CORS_ORIGIN || 'http://localhost:3000';
+  const corsOrigin = process.env.CORS_ORIGIN || 'http://localhost:3000,https://frontend-pi-one-91.vercel.app';
   app.enableCors({
     origin: corsOrigin.split(',').map((o) => o.trim()),
     credentials: true,

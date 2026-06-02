@@ -23,7 +23,7 @@ export default function SearchPage() {
   useEffect(() => {
     if (!query) return;
     setLoading(true);
-    listingsApi.search(query, { page: String(page), page_size: '12' })
+    listingsApi.search(query, { page: String(page), limit: '12' })
       .then(res => { setListings(res.data.results || res.data); setTotal(res.data.count || 0); })
       .catch(() => {})
       .finally(() => setLoading(false));

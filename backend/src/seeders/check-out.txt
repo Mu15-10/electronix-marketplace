@@ -1,0 +1,29 @@
+﻿Listings: 5000
+node : error: column "categoryid" does not exist
+At line:1 char:1
++ node C:\Users\dell\Documents\marketplace\backend\src\seeders\check-da ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (error: column "... does not exist:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    at C:\Users\dell\Documents\marketplace\node_modules\pg\lib\client.js:646:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async run (C:\Users\dell\Documents\marketplace\backend\src\seeders\check-data.js:9:15) {
+  length: 175,
+  severity: 'ERROR',
+  code: '42703',
+  detail: undefined,
+  hint: 'Perhaps you meant to reference the column "listings.categoryId".',
+  position: '8',
+  internalPosition: undefined,
+  internalQuery: undefined,
+  where: undefined,
+  schema: undefined,
+  table: undefined,
+  column: undefined,
+  dataType: undefined,
+  constraint: undefined,
+  file: 'parse_relation.c',
+  line: '3829',
+  routine: 'errorMissingColumn'
+}

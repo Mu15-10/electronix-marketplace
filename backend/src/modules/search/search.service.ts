@@ -47,7 +47,7 @@ export class SearchService {
       .take(limit)
       .getManyAndCount();
 
-    return { items, total, page, limit, totalPages: Math.ceil(total / limit) };
+    return { results: items, count: total, page, limit, totalPages: Math.ceil(total / limit) } as any;
   }
 
   async autocomplete(query: string): Promise<string[]> {

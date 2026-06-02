@@ -99,12 +99,12 @@ export class ListingsService {
     });
 
     return {
-      items,
-      total,
+      results: items,
+      count: total,
       page,
       limit,
       totalPages: Math.ceil(total / limit),
-    };
+    } as any;
   }
 
   async findById(id: string): Promise<Listing> {

@@ -30,7 +30,7 @@ export default function HomePage() {
 
   useEffect(() => {
     Promise.all([
-      listingsApi.getAll({ is_featured: 'true', page_size: '8' }).then(r => setFeatured(r.data.results)).catch(() => {}),
+      listingsApi.getAll({ limit: '8', sortBy: 'createdAt', sortOrder: 'DESC' }).then(r => setFeatured(r.data.results || r.data)).catch(() => {}),
       listingsApi.getCategories().then(r => setCategories(r.data.results || r.data)).catch(() => {}),
     ]).finally(() => setLoading(false));
   }, []);

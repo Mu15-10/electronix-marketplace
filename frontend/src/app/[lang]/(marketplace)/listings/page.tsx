@@ -27,7 +27,7 @@ export default function ListingsPage() {
   const fetchListings = async (filters?: Partial<SearchFilters>) => {
     setLoading(true);
     try {
-      const params: Record<string, string> = { page: String(page), page_size: '12' };
+      const params: Record<string, string> = { page: String(page), limit: '12' };
       if (filters) {
         Object.entries(filters).forEach(([k, v]) => { if (v !== undefined && v !== null) { params[k] = String(v); } });
       }
