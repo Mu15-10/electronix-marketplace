@@ -7,8 +7,27 @@ import { ScheduleModule } from '@nestjs/schedule';
 import { CacheModule } from '@nestjs/cache-manager';
 import { BullModule } from '@nestjs/bull';
 import { dataSourceOptions } from './config/database.config';
-import { redisConfig, bullConfig } from './config/redis.config';
 import { CustomThrottlerGuard } from './common/guards/throttle.guard';
+
+const hasRedis = !!(process.env.REDIS_HOST || process.env.REDIS_URL);
+
+const bullImports: any[] = [];
+if (hasRedis) {
+  bullImports.push(BullModule.forRoot({
+    redis: {
+      host: process.env.REDIS_HOST || 'localhost',
+      port: parseInt(process.env.REDIS_PORT || '6379', 10),
+      password: process.env.REDIS_PASSWORD || undefined,
+      db: 1,
+    },
+    defaultJobOptions: {
+      attempts: 3,
+      backoff: { type: 'exponential', delay: 2000 },
+      removeOnComplete: true,
+      removeOnFail: false,
+    },
+  }));
+}
 
 import { AuthModule } from './modules/auth/auth.module';
 import { UsersModule } from './modules/users/users.module';
@@ -65,10 +84,7 @@ import { ReferralModule } from './modules/referral/referral.module';
       max: 100,
     }),
 
-    BullModule.forRoot({
-      redis: bullConfig.redis,
-      defaultJobOptions: bullConfig.defaultJobOptions,
-    }),
+    ...bullImports,
 
     AuthModule,
     UsersModule,
