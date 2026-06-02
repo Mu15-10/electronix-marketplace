@@ -61,6 +61,8 @@ import { SubscriptionModule } from './modules/subscription/subscription.module';
 import { CommissionModule } from './modules/commission/commission.module';
 import { LoyaltyModule } from './modules/loyalty/loyalty.module';
 import { ReferralModule } from './modules/referral/referral.module';
+import { CategoriesModule } from './modules/categories/categories.module';
+import { SeedModule } from './modules/seed/seed.module';
 
 @Module({
   imports: [
@@ -118,6 +120,8 @@ import { ReferralModule } from './modules/referral/referral.module';
     CommissionModule,
     LoyaltyModule,
     ReferralModule,
+    CategoriesModule,
+    SeedModule,
   ],
   providers: [
     {
