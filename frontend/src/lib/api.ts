@@ -31,8 +31,12 @@ api.interceptors.request.use(
 
 api.interceptors.response.use(
   (response) => {
-    if (response.data?.data?.items !== undefined) {
-      response.data = { ...response.data, data: { ...response.data.data, results: response.data.data.items, count: response.data.data.total } };
+    const d = response.data;
+    if (d?.data?.items !== undefined) {
+      d.data.results = d.data.items;
+      d.data.count = d.data.total;
+      d.results = d.data.items;
+      d.count = d.data.total;
     }
     return response;
   },
