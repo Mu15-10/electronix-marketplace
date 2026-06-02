@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module, Provider } from '@nestjs/common';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -10,6 +10,12 @@ import { GoogleStrategy } from './strategies/google.strategy';
 import { User } from '../users/entities/user.entity';
 import { AuditLog } from '../audit/entities/audit.entity';
 
+const providers: Provider[] = [AuthService, JwtStrategy, JwtRefreshStrategy];
+
+if (process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET) {
+  providers.push(GoogleStrategy);
+}
+
 @Module({
   imports: [
     TypeOrmModule.forFeature([User, AuditLog]),
@@ -20,7 +26,7 @@ import { AuditLog } from '../audit/entities/audit.entity';
     }),
   ],
   controllers: [AuthController],
-  providers: [AuthService, JwtStrategy, JwtRefreshStrategy, GoogleStrategy],
+  providers,
   exports: [AuthService, JwtModule, PassportModule],
 })
 export class AuthModule {}
