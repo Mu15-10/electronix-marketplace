@@ -199,7 +199,7 @@ export class AiPricingService {
         where: {
           brand,
           model,
-          status: 'active',
+          status: 'active' as any,
         },
       });
 
