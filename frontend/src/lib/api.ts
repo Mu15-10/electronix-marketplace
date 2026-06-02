@@ -30,7 +30,12 @@ api.interceptors.request.use(
 );
 
 api.interceptors.response.use(
-  (response) => response,
+  (response) => {
+    if (response.data?.data?.items !== undefined) {
+      response.data = { ...response.data, data: { ...response.data.data, results: response.data.data.items, count: response.data.data.total } };
+    }
+    return response;
+  },
   async (error: AxiosError) => {
     const originalRequest = error.config as InternalAxiosRequestConfig & { _retry?: boolean };
 
