@@ -1,0 +1,35 @@
+{
+  "common": {
+    "app_name": "Electronix",
+    "tagline": "Yapay Zeka Destekli Elektronik Pazarı",
+    "browse": "Gözat",
+    "categories": "Kategoriler",
+    "sellers": "Satıcılar",
+    "login": "Giriş Yap",
+    "signup": "Kaydol",
+    "logout": "Çıkış Yap",
+    "search": "Ara",
+    "sell": "Sat",
+    "dashboard": "Panel",
+    "settings": "Ayarlar",
+    "wishlist": "Favoriler",
+    "messages": "Mesajlar",
+    "notifications": "Bildirimler"
+  },
+  "home": {
+    "hero_title": "Yapay Zeka Korumasıyla Doğrulanmış Elektronikleri Alın ve Satın",
+    "hero_subtitle": "Elektronik için en güvenli pazar yeri. Her ilan doğrulanır, her işlem korunur.",
+    "hero_cta": "Alışverişe Başla",
+    "hero_cta_seller": "Satmaya Başla",
+    "featured_title": "Öne Çıkan İlanlar",
+    "categories_title": "Kategoriye Göre Gözat",
+    "how_it_works": "Nasıl Çalışır",
+    "stats_users": "Aktif Kullanıcılar",
+    "stats_listings": "İlanlar",
+    "stats_transactions": "İşlemler",
+    "stats_countries": "Ülkeler",
+    "newsletter_title": "Güncel Kalın",
+    "newsletter_desc": "En son fırsatları ve güncellemeleri gelen kutunuzda alın.",
+    "newsletter_cta": "Abone Ol"
+  }
+}

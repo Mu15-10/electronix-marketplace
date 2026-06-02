@@ -1,0 +1,23 @@
+﻿{
+    "title":  "Ø¹Ø±Ø¨ÙŠ: Pricing",
+    "priceAnalysis":  "Ø¹Ø±Ø¨ÙŠ: Price Analysis",
+    "recommendedPrice":  "Ø¹Ø±Ø¨ÙŠ: Recommended Price",
+    "marketPrice":  "Ø¹Ø±Ø¨ÙŠ: Market Price",
+    "marketMin":  "Ø¹Ø±Ø¨ÙŠ: Market Min",
+    "marketMax":  "Ø¹Ø±Ø¨ÙŠ: Market Max",
+    "confidence":  "Ø¹Ø±Ø¨ÙŠ: Confidence",
+    "demandScore":  "Ø¹Ø±Ø¨ÙŠ: Demand Score",
+    "supplyScore":  "Ø¹Ø±Ø¨ÙŠ: Supply Score",
+    "priceHistory":  "Ø¹Ø±Ø¨ÙŠ: Price History",
+    "pricePrediction":  "Ø¹Ø±Ø¨ÙŠ: Price Prediction",
+    "seasonalTrends":  "Ø¹Ø±Ø¨ÙŠ: Seasonal Trends",
+    "marketTrends":  "Ø¹Ø±Ø¨ÙŠ: Market Trends",
+    "analyzePrice":  "Ø¹Ø±Ø¨ÙŠ: Analyze Price",
+    "suggestedPrice":  "Ø¹Ø±Ø¨ÙŠ: Suggested Price",
+    "noData":  "Ø¹Ø±Ø¨ÙŠ: No data available",
+    "analyzing":  "Ø¹Ø±Ø¨ÙŠ: Analyzing...",
+    "brand":  "Ø¹Ø±Ø¨ÙŠ: Brand",
+    "model":  "Ø¹Ø±Ø¨ÙŠ: Model",
+    "condition":  "Ø¹Ø±Ø¨ÙŠ: Condition",
+    "variant":  "Ø¹Ø±Ø¨ÙŠ: Variant"
+}

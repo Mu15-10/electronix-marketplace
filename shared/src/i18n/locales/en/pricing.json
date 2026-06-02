@@ -1,0 +1,23 @@
+﻿{
+    "title":  "Pricing",
+    "priceAnalysis":  "Price Analysis",
+    "recommendedPrice":  "Recommended Price",
+    "marketPrice":  "Market Price",
+    "marketMin":  "Market Min",
+    "marketMax":  "Market Max",
+    "confidence":  "Confidence",
+    "demandScore":  "Demand Score",
+    "supplyScore":  "Supply Score",
+    "priceHistory":  "Price History",
+    "pricePrediction":  "Price Prediction",
+    "seasonalTrends":  "Seasonal Trends",
+    "marketTrends":  "Market Trends",
+    "analyzePrice":  "Analyze Price",
+    "suggestedPrice":  "Suggested Price",
+    "noData":  "No data available",
+    "analyzing":  "Analyzing...",
+    "brand":  "Brand",
+    "model":  "Model",
+    "condition":  "Condition",
+    "variant":  "Variant"
+}

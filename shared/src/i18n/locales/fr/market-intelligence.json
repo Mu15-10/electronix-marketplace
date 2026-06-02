@@ -1,0 +1,19 @@
+﻿{
+    "title":  "Intelligence de MarchÃ©",
+    "demandTrends":  "Tendances de la Demande",
+    "priceTrends":  "Tendances des Prix",
+    "trendingBrands":  "Marques Tendance",
+    "regionalTrends":  "Tendances RÃ©gionales",
+    "topSearches":  "Recherches les Plus FrÃ©quentes",
+    "recommendations":  "Recommandations",
+    "sellerInsights":  "Conseils aux Vendeurs",
+    "categoryPerformance":  "Performance des CatÃ©gories",
+    "period":  "PÃ©riode",
+    "daily":  "Quotidien",
+    "weekly":  "Hebdomadaire",
+    "monthly":  "Mensuel",
+    "demand":  "Demande",
+    "supply":  "Offre",
+    "price":  "Prix",
+    "noInsights":  "Aucune information disponible"
+}

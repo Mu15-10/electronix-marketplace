@@ -1,0 +1,23 @@
+﻿{
+    "title":  "FiyatlandÄ±rma",
+    "priceAnalysis":  "Fiyat Analizi",
+    "recommendedPrice":  "Ã–nerilen Fiyat",
+    "marketPrice":  "Piyasa FiyatÄ±",
+    "marketMin":  "Piyasa Min",
+    "marketMax":  "Piyasa Maks",
+    "confidence":  "GÃ¼ven",
+    "demandScore":  "Talep PuanÄ±",
+    "supplyScore":  "Arz PuanÄ±",
+    "priceHistory":  "Fiyat GeÃ§miÅŸi",
+    "pricePrediction":  "Fiyat Tahmini",
+    "seasonalTrends":  "Mevsimsel Trendler",
+    "marketTrends":  "Piyasa Trendleri",
+    "analyzePrice":  "FiyatÄ± Analiz Et",
+    "suggestedPrice":  "Ã–nerilen Fiyat",
+    "noData":  "Veri mevcut deÄŸil",
+    "analyzing":  "Analiz ediliyor...",
+    "brand":  "Marka",
+    "model":  "Model",
+    "condition":  "Durum",
+    "variant":  "Varyant"
+}

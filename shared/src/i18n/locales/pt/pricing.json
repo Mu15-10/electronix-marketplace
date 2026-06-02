@@ -1,0 +1,23 @@
+﻿{
+    "title":  "PreÃ§os",
+    "priceAnalysis":  "AnÃ¡lise de PreÃ§o",
+    "recommendedPrice":  "PreÃ§o Recomendado",
+    "marketPrice":  "PreÃ§o de Mercado",
+    "marketMin":  "MÃ­n. Mercado",
+    "marketMax":  "MÃ¡x. Mercado",
+    "confidence":  "ConfianÃ§a",
+    "demandScore":  "PontuaÃ§Ã£o de Demanda",
+    "supplyScore":  "PontuaÃ§Ã£o de Oferta",
+    "priceHistory":  "HistÃ³rico de PreÃ§os",
+    "pricePrediction":  "PrevisÃ£o de PreÃ§o",
+    "seasonalTrends":  "TendÃªncias Sazonais",
+    "marketTrends":  "TendÃªncias de Mercado",
+    "analyzePrice":  "Analisar PreÃ§o",
+    "suggestedPrice":  "PreÃ§o Sugerido",
+    "noData":  "Nenhum dado disponÃ­vel",
+    "analyzing":  "Analisando...",
+    "brand":  "Marca",
+    "model":  "Modelo",
+    "condition":  "CondiÃ§Ã£o",
+    "variant":  "Variante"
+}

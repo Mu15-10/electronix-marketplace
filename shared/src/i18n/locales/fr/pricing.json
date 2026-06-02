@@ -1,0 +1,23 @@
+﻿{
+    "title":  "Tarification",
+    "priceAnalysis":  "Analyse des Prix",
+    "recommendedPrice":  "Prix RecommandÃ©",
+    "marketPrice":  "Prix du MarchÃ©",
+    "marketMin":  "Min. du MarchÃ©",
+    "marketMax":  "Max. du MarchÃ©",
+    "confidence":  "Confiance",
+    "demandScore":  "Score de Demande",
+    "supplyScore":  "Score d\u0027Offre",
+    "priceHistory":  "Historique des Prix",
+    "pricePrediction":  "PrÃ©diction de Prix",
+    "seasonalTrends":  "Tendances SaisonniÃ¨res",
+    "marketTrends":  "Tendances du MarchÃ©",
+    "analyzePrice":  "Analyser le Prix",
+    "suggestedPrice":  "Prix SuggÃ©rÃ©",
+    "noData":  "Aucune donnÃ©e disponible",
+    "analyzing":  "Analyse en cours...",
+    "brand":  "Marque",
+    "model":  "ModÃ¨le",
+    "condition":  "Ã‰tat",
+    "variant":  "Variante"
+}

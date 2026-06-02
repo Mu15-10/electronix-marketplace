@@ -1,0 +1,19 @@
+﻿{
+    "title":  "Market Intelligence",
+    "demandTrends":  "Tendenze Domanda",
+    "priceTrends":  "Tendenze Prezzi",
+    "trendingBrands":  "Marche di Tendenza",
+    "regionalTrends":  "Tendenze Regionali",
+    "topSearches":  "Ricerche Principali",
+    "recommendations":  "Raccomandazioni",
+    "sellerInsights":  "Insight Venditori",
+    "categoryPerformance":  "Performance Categoria",
+    "period":  "Periodo",
+    "daily":  "Giornaliero",
+    "weekly":  "Settimanale",
+    "monthly":  "Mensile",
+    "demand":  "Domanda",
+    "supply":  "Offerta",
+    "price":  "Prezzo",
+    "noInsights":  "Nessun insight disponibile"
+}

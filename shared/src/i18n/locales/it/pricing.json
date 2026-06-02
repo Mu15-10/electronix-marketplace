@@ -1,0 +1,23 @@
+﻿{
+    "title":  "Prezzi",
+    "priceAnalysis":  "Analisi Prezzo",
+    "recommendedPrice":  "Prezzo Raccomandato",
+    "marketPrice":  "Prezzo di Mercato",
+    "marketMin":  "Min. Mercato",
+    "marketMax":  "Max. Mercato",
+    "confidence":  "Confidenza",
+    "demandScore":  "Punteggio Domanda",
+    "supplyScore":  "Punteggio Offerta",
+    "priceHistory":  "Cronologia Prezzi",
+    "pricePrediction":  "Previsione Prezzo",
+    "seasonalTrends":  "Tendenze Stagionali",
+    "marketTrends":  "Tendenze Mercato",
+    "analyzePrice":  "Analizza Prezzo",
+    "suggestedPrice":  "Prezzo Suggerito",
+    "noData":  "Nessun dato disponibile",
+    "analyzing":  "Analisi in corso...",
+    "brand":  "Marca",
+    "model":  "Modello",
+    "condition":  "Condizione",
+    "variant":  "Variante"
+}

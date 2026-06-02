@@ -1,0 +1,19 @@
+﻿{
+    "title":  "Piyasa Ä°stihbaratÄ±",
+    "demandTrends":  "Talep Trendleri",
+    "priceTrends":  "Fiyat Trendleri",
+    "trendingBrands":  "Trend Markalar",
+    "regionalTrends":  "BÃ¶lgesel Trendler",
+    "topSearches":  "PopÃ¼ler Aramalar",
+    "recommendations":  "Ã–neriler",
+    "sellerInsights":  "SatÄ±cÄ± Ä°Ã§gÃ¶rÃ¼leri",
+    "categoryPerformance":  "Kategori PerformansÄ±",
+    "period":  "DÃ¶nem",
+    "daily":  "GÃ¼nlÃ¼k",
+    "weekly":  "HaftalÄ±k",
+    "monthly":  "AylÄ±k",
+    "demand":  "Talep",
+    "supply":  "Arz",
+    "price":  "Fiyat",
+    "noInsights":  "Ä°Ã§gÃ¶rÃ¼ mevcut deÄŸil"
+}
