@@ -29,10 +29,15 @@ export default function HomePage() {
   const [email, setEmail] = useState('');
 
   useEffect(() => {
-    Promise.all([
-      listingsApi.getAll({ limit: '8', sortBy: 'createdAt', sortOrder: 'DESC' }).then(r => setFeatured(r.data.results || r.data)).catch(() => {}),
-      listingsApi.getCategories().then(r => setCategories(r.data.results || r.data)).catch(() => {}),
-    ]).finally(() => setLoading(false));
+    const loadListings = (retries = 2) => {
+      listingsApi.getAll({ limit: '8', sortBy: 'createdAt', sortOrder: 'DESC' })
+        .then(r => { setFeatured(r.data.results || r.data); setLoading(false) })
+        .catch(() => { if (retries > 0) setTimeout(() => loadListings(retries - 1), 3000); else setLoading(false) });
+    };
+    listingsApi.getCategories()
+      .then(r => setCategories(r.data.results || r.data))
+      .catch(() => {});
+    loadListings();
   }, []);
 
   const categoryIcons: Record<string, React.ReactNode> = {
