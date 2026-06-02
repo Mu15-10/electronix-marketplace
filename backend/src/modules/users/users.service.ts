@@ -140,7 +140,7 @@ export class UsersService {
     const user = await this.findById(id);
     user.status = UserStatus.ACTIVE;
     user.failedLoginAttempts = 0;
-    user.lockedUntil = null;
+    user.lockedUntil = null as any;
     await this.userRepository.save(user);
 
     await this.auditLogRepository.save({

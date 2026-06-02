@@ -1,5 +1,5 @@
 import {
-  Entity, PrimaryGeneratedColumn, CreateDateColumn,
+  Entity, PrimaryGeneratedColumn, Column, CreateDateColumn,
   ManyToOne, JoinColumn, Index, Unique,
 } from 'typeorm';
 import { User } from '../../users/entities/user.entity';
